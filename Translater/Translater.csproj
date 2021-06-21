@@ -57,6 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Env.cs" />
+    <Compile Include="OfflineTranslater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfflineTranslater.Designer.cs">
+      <DependentUpon>OfflineTranslater.cs</DependentUpon>
+    </Compile>
     <Compile Include="Onlinetranslater.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfflineTranslater.resx">
+      <DependentUpon>OfflineTranslater.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Onlinetranslater.resx">
       <DependentUpon>Onlinetranslater.cs</DependentUpon>

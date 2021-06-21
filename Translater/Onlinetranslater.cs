@@ -27,22 +27,33 @@ namespace Translater
 
         private void btnDetectSrcLang_Click(object sender, EventArgs e)
         {
-            var client = new RestClient()
+            try
             {
-                BaseUrl = new Uri (string.Format(Env.UrlDetectSrcLang , Env.Apikey , txtSrc.Text))
-            };
-            var Request = new RestRequest()
-            {
-                Method = Method.GET
-            };
-            var Response = client.Execute.(Request);
+                var client = new RestClient()
+                {
+                    BaseUrl = new Uri(string.Format(Env.UrlDetectSrcLang, Env.Apikey, txtSrc.Text))
+                };
+                var Request = new RestRequest()
+                {
+                    Method = Method.GET
+                };
+                var Response = client.Execute.(Request);
 
-            var Dict = JsonConvert.DeserializeObject<IDictionary>(Response.Content);
+                var Dict = JsonConvert.DeserializeObject<IDictionary>(Response.Content);
 
-            var StatusCode = Dict["code"].ToString();
-            if (StatusCode.Equals("200"))
+                var StatusCode = Dict["code"].ToString();
+                if (StatusCode.Equals("200"))
+                {
+                    lblSrcLang.Text = Dict["lang"].ToString();
+                }
+            }
+            catch (Exception ex)
             {
-                lblSrcLang.Text = Dict["lang"].ToString();
+
+            }
+            finally
+            {
+
             }
         }
 

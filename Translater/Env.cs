@@ -12,5 +12,10 @@ namespace Translater
         public static string UrlGetLangsAvivable { get; } = @"https://translate.yandex.net/api/v1.5/tr.json/getlangs?key={0}&ui={1}";
         public static string UrlDetectSrcLang { get; } = @"https://translate.yandex.net/api/v1.5/tr.json/detect?key={0}&text={1}";
         public static string UrlTranslateLang { get; } = @"https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}";
+        public static string formatfiletype = ".translate";
+        public static string pacageformatfiletype = ".translatepacage";
+        public static string pacageformat = "null//0";
+        public static string configfileformat = ".translateconfig";
+        public static string langconfigfileformat = "translatelangconfig";
     }
 }
