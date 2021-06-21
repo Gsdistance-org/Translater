@@ -22,9 +22,10 @@ namespace Translater
         {
             try
             {
-                string trlang = (this.txtTrLang.Text);
+                string trinlang = (this.txtTrInputLang.Text);
+                string troutlang = (this.txtTrOutLang.Text);
                 string trinput = (this.txtSrc.Text);
-                this.txtOut.Text = (LangCore.GetTranslateFileOut(trlang, trinput));
+                this.txtOut.Text = (LangCore.GetTranslateFileOut(trinlang, trinput , troutlang));
             }
             catch(Exception ex)
             {

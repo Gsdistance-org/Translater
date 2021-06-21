@@ -9,11 +9,11 @@ namespace Translater
 {
     public class LangCore
     {
-        public static string GetTranslateFileOut (string lang , string input)
+        public static string GetTranslateFileOut (string inputlang , string input , string outlang)
         {
             try
             {
-                string trfilepath = (@".\" + Env.trdestfolder + @"\" + lang + @"\" + input + Env.formatfiletype);
+                string trfilepath = (@".\" + Env.trdestfolder + @"\" + inputlang + "-" + outlang + @"\" + input + Env.formatfiletype);
                 string fileinput = File.ReadAllText(trfilepath).ToString();
                 return fileinput;
             }

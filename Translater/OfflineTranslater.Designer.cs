@@ -33,7 +33,8 @@ namespace Translater
             this.txtSrc = new System.Windows.Forms.RichTextBox();
             this.txtOut = new System.Windows.Forms.RichTextBox();
             this.btnTranslate = new System.Windows.Forms.Button();
-            this.txtTrLang = new System.Windows.Forms.RichTextBox();
+            this.txtTrInputLang = new System.Windows.Forms.RichTextBox();
+            this.txtTrOutLang = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // txtSrc
@@ -62,20 +63,29 @@ namespace Translater
             this.btnTranslate.UseVisualStyleBackColor = true;
             this.btnTranslate.Click += new System.EventHandler(this.btnTranslate_Click);
             // 
-            // txtTrLang
+            // txtTrInputLang
             // 
-            this.txtTrLang.Location = new System.Drawing.Point(12, 117);
-            this.txtTrLang.Name = "txtTrLang";
-            this.txtTrLang.Size = new System.Drawing.Size(86, 44);
-            this.txtTrLang.TabIndex = 3;
-            this.txtTrLang.Text = "";
+            this.txtTrInputLang.Location = new System.Drawing.Point(57, 67);
+            this.txtTrInputLang.Name = "txtTrInputLang";
+            this.txtTrInputLang.Size = new System.Drawing.Size(86, 44);
+            this.txtTrInputLang.TabIndex = 3;
+            this.txtTrInputLang.Text = "";
+            // 
+            // txtTrOutLang
+            // 
+            this.txtTrOutLang.Location = new System.Drawing.Point(57, 255);
+            this.txtTrOutLang.Name = "txtTrOutLang";
+            this.txtTrOutLang.Size = new System.Drawing.Size(86, 44);
+            this.txtTrOutLang.TabIndex = 4;
+            this.txtTrOutLang.Text = "";
             // 
             // OfflineTranslater
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(327, 355);
-            this.Controls.Add(this.txtTrLang);
+            this.Controls.Add(this.txtTrOutLang);
+            this.Controls.Add(this.txtTrInputLang);
             this.Controls.Add(this.btnTranslate);
             this.Controls.Add(this.txtOut);
             this.Controls.Add(this.txtSrc);
@@ -92,6 +102,7 @@ namespace Translater
         private System.Windows.Forms.RichTextBox txtSrc;
         private System.Windows.Forms.RichTextBox txtOut;
         private System.Windows.Forms.Button btnTranslate;
-        private System.Windows.Forms.RichTextBox txtTrLang;
+        private System.Windows.Forms.RichTextBox txtTrInputLang;
+        private System.Windows.Forms.RichTextBox txtTrOutLang;
     }
 }
