@@ -22,7 +22,7 @@ namespace Translater
                 string errorfile = @".\error.error";
                 string error = (Convert.ToString(ex));
                 File.WriteAllText(errorfile , error);
-                return "ERROR" + ex;
+                return "ERROR" + "/THE Exeption|" + ex;
             }
             finally
             {
