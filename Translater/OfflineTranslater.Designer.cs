@@ -35,6 +35,8 @@ namespace Translater
             this.btnTranslate = new System.Windows.Forms.Button();
             this.txtTrInputLang = new System.Windows.Forms.RichTextBox();
             this.txtTrOutLang = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSrc
@@ -79,20 +81,33 @@ namespace Translater
             this.txtTrOutLang.TabIndex = 4;
             this.txtTrOutLang.Text = "";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Translater.Properties.Resources.translatelogo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(35, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // OfflineTranslater
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(327, 355);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtTrOutLang);
             this.Controls.Add(this.txtTrInputLang);
             this.Controls.Add(this.btnTranslate);
             this.Controls.Add(this.txtOut);
             this.Controls.Add(this.txtSrc);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OfflineTranslater";
             this.Text = "ExEx Platform Binary";
             this.Load += new System.EventHandler(this.OfflineTranslater_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -104,5 +119,6 @@ namespace Translater
         private System.Windows.Forms.Button btnTranslate;
         private System.Windows.Forms.RichTextBox txtTrInputLang;
         private System.Windows.Forms.RichTextBox txtTrOutLang;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
