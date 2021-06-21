@@ -9,7 +9,7 @@ namespace Translater
 {
     public class LangCore
     {
-        public static string Getfileout (string lang , string input)
+        public static string GetTranslateFileOut (string lang , string input)
         {
             try
             {
