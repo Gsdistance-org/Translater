@@ -13,7 +13,7 @@ namespace Translater
         {
             try
             {
-                string trfilepath = (@".\" + Env.trdestfolder + lang + input + Env.formatfiletype);
+                string trfilepath = (@".\" + Env.trdestfolder + @"\" + lang + @"\" + input + Env.formatfiletype);
                 string fileinput = File.ReadAllText(trfilepath).ToString();
                 return fileinput;
             }
