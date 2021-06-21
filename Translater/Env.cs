@@ -17,5 +17,6 @@ namespace Translater
         public static string pacageformat = "null//0";
         public static string configfileformat = ".translateconfig";
         public static string langconfigfileformat = "translatelangconfig";
+        public static string trdestfolder = "TranslaterLangs";
     }
 }

@@ -56,7 +56,7 @@ namespace Translater
             // 
             this.btnTranslate.Location = new System.Drawing.Point(149, 174);
             this.btnTranslate.Name = "btnTranslate";
-            this.btnTranslate.Size = new System.Drawing.Size(75, 23);
+            this.btnTranslate.Size = new System.Drawing.Size(80, 23);
             this.btnTranslate.TabIndex = 2;
             this.btnTranslate.Text = "Translate";
             this.btnTranslate.UseVisualStyleBackColor = true;

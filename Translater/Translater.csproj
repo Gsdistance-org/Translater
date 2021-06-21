@@ -56,18 +56,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LangCore.cs" />
     <Compile Include="Env.cs" />
     <Compile Include="OfflineTranslater.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OfflineTranslater.Designer.cs">
       <DependentUpon>OfflineTranslater.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Onlinetranslater.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Onlinetranslater.Designer.cs">
-      <DependentUpon>Onlinetranslater.cs</DependentUpon>
     </Compile>
     <Compile Include="Pacage.cs" />
     <Compile Include="Form1.cs">
@@ -83,9 +78,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OfflineTranslater.resx">
       <DependentUpon>OfflineTranslater.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Onlinetranslater.resx">
-      <DependentUpon>Onlinetranslater.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

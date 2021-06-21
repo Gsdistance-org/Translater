@@ -20,11 +20,21 @@ namespace Translater
 
         private void btnTranslate_Click(object sender, EventArgs e)
         {
-            string trlang = (this.txtTrLang.Text);
-            string trinput = (this.txtSrc.Text);
-            string trfilepath = (@".\" + trlang + trinput);
-            string fileinput = File.ReadAllText(trfilepath);
-            this.txtOut.Text = (fileinput);
+            try
+            {
+                string trlang = (this.txtTrLang.Text);
+                string trinput = (this.txtSrc.Text);
+                this.txtOut.Text = (LangCore.Getfileout(trlang, trinput));
+            }
+            catch(Exception ex)
+            {
+
+            }
+            finally
+            {
+
+            }
+            
         }
 
         private void OfflineTranslater_Load(object sender, EventArgs e)
