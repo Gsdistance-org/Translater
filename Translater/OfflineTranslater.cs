@@ -29,7 +29,7 @@ namespace Translater
             }
             catch(Exception ex)
             {
-
+                MessageBox.Show("Error" + ex);
             }
             finally
             {
