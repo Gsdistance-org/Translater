@@ -34,6 +34,8 @@ namespace Translater
                 else
                 {
                     this.txtOut.Text = (LangCore.GetTranslateFileOut(trinlang, trinput, troutlang));
+                    double memset = 1;
+                    File.WriteAllText(@".\pacageselector.mem", Convert.ToString(memset));
                 }
             }
             catch(Exception ex)
