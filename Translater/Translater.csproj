@@ -90,6 +90,14 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Env.datasource" />
+    <None Include="Properties\DataSources\Form1.datasource" />
+    <None Include="Properties\DataSources\LangCore.datasource" />
+    <None Include="Properties\DataSources\OfflineTranslater.datasource" />
+    <None Include="Properties\DataSources\Pacage.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Translater.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Translater.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

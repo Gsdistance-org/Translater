@@ -33,9 +33,13 @@ namespace Translater
             this.txtSrc = new System.Windows.Forms.RichTextBox();
             this.txtOut = new System.Windows.Forms.RichTextBox();
             this.btnTranslate = new System.Windows.Forms.Button();
-            this.txtTrInputLang = new System.Windows.Forms.RichTextBox();
-            this.txtTrOutLang = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtTrOutLang = new System.Windows.Forms.ComboBox();
+            this.txtTrInputLang = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +61,7 @@ namespace Translater
             // 
             // btnTranslate
             // 
-            this.btnTranslate.Location = new System.Drawing.Point(149, 174);
+            this.btnTranslate.Location = new System.Drawing.Point(63, 173);
             this.btnTranslate.Name = "btnTranslate";
             this.btnTranslate.Size = new System.Drawing.Size(80, 23);
             this.btnTranslate.TabIndex = 2;
@@ -65,40 +69,84 @@ namespace Translater
             this.btnTranslate.UseVisualStyleBackColor = true;
             this.btnTranslate.Click += new System.EventHandler(this.btnTranslate_Click);
             // 
-            // txtTrInputLang
-            // 
-            this.txtTrInputLang.Location = new System.Drawing.Point(57, 67);
-            this.txtTrInputLang.Name = "txtTrInputLang";
-            this.txtTrInputLang.Size = new System.Drawing.Size(86, 44);
-            this.txtTrInputLang.TabIndex = 3;
-            this.txtTrInputLang.Text = "";
-            // 
-            // txtTrOutLang
-            // 
-            this.txtTrOutLang.Location = new System.Drawing.Point(57, 255);
-            this.txtTrOutLang.Name = "txtTrOutLang";
-            this.txtTrOutLang.Size = new System.Drawing.Size(86, 44);
-            this.txtTrOutLang.TabIndex = 4;
-            this.txtTrOutLang.Text = "";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Translater.Properties.Resources.translatelogo;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(35, 33);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            // 
+            // txtTrOutLang
+            // 
+            this.txtTrOutLang.FormattingEnabled = true;
+            this.txtTrOutLang.Items.AddRange(new object[] {
+            "English"});
+            this.txtTrOutLang.Location = new System.Drawing.Point(68, 266);
+            this.txtTrOutLang.Name = "txtTrOutLang";
+            this.txtTrOutLang.Size = new System.Drawing.Size(75, 24);
+            this.txtTrOutLang.TabIndex = 6;
+            // 
+            // txtTrInputLang
+            // 
+            this.txtTrInputLang.FormattingEnabled = true;
+            this.txtTrInputLang.Items.AddRange(new object[] {
+            "Türkçe"});
+            this.txtTrInputLang.Location = new System.Drawing.Point(68, 85);
+            this.txtTrInputLang.Name = "txtTrInputLang";
+            this.txtTrInputLang.Size = new System.Drawing.Size(75, 24);
+            this.txtTrInputLang.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(73, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 17);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Input lang";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(65, 246);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 17);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Output lang";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(178, 209);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 17);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Output";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(178, 28);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(39, 17);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Input";
             // 
             // OfflineTranslater
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(327, 355);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txtTrOutLang);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTrInputLang);
+            this.Controls.Add(this.txtTrOutLang);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnTranslate);
             this.Controls.Add(this.txtOut);
             this.Controls.Add(this.txtSrc);
@@ -109,6 +157,7 @@ namespace Translater
             this.Load += new System.EventHandler(this.OfflineTranslater_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -117,8 +166,12 @@ namespace Translater
         private System.Windows.Forms.RichTextBox txtSrc;
         private System.Windows.Forms.RichTextBox txtOut;
         private System.Windows.Forms.Button btnTranslate;
-        private System.Windows.Forms.RichTextBox txtTrInputLang;
-        private System.Windows.Forms.RichTextBox txtTrOutLang;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox txtTrOutLang;
+        private System.Windows.Forms.ComboBox txtTrInputLang;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
