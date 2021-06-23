@@ -13,16 +13,16 @@ namespace Translater
         {
             try
             {
-                string trfilepath = (@".\" + Env.trdestfolder + @"\" + inputlang + "-" + outlang + @"\" + input + Env.formatfiletype);
+                string trfilepath = (@".\" + Env.trdestfolder + @"\" + inputlang + "-" + outlang + @"\" + input + Env.formatfiletype1);
                 string fileinput = File.ReadAllText(trfilepath).ToString();
                 return fileinput;
             }
             catch(Exception ex)
             {
                 string errorfile = @".\error.error";
-                string error = (Convert.ToString(ex));
+                string error = (Env.errormessage + "/THE Exeption|" + Convert.ToString(ex));
                 File.WriteAllText(errorfile , error);
-                return "ERROR" + "/THE Exeption|" + ex;
+                return "Error";
             }
             finally
             {
