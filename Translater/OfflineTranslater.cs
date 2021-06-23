@@ -54,5 +54,10 @@ namespace Translater
             double memset = 1;
             File.WriteAllText(@".\pacageselector.mem", Convert.ToString(memset));
         }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
